@@ -44,7 +44,7 @@ for link in content_div.find_all("a"):
 
     time.sleep(1)
 
-with open("ipc_codes.csv", "w", newline="", encoding="utf-8") as file:
+with open("ipc_data.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     writer.writerow(["IPC Code", "Title", "Description"])
     writer.writerows(ipc_data)
